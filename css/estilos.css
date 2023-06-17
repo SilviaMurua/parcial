@@ -1,0 +1,78 @@
+/* INICIO */
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica;
+}
+html {
+      font-size: 60%;
+}
+.container {
+      background-color: linear-gradient(to left, #D4AC0D, #F5CBA7);
+      margin-top: 3px;
+     
+}
+.navbar {
+      border-bottom: #a12106 solid .5px;
+      margin-right: 50px;
+ }
+.container .navbar {
+      width: 100%;
+      display: flex;
+      padding: 15px;
+      background-color: transparent;
+      margin-bottom: 30px;  
+ }
+.navbar a{
+      display: flex;
+      justify-content: right; 
+      margin-right: 60px ; 
+}
+/* estilos de controles*/
+
+.row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 5px;
+      margin-top: 40px;
+}
+.col {
+      margin: 5px;
+}
+.container-fluid {
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+}
+#la{
+      font-size: 15px;
+      font-family: Helvetica;
+      font-style: bolder;
+      padding-bottom: 1 0 0 1px;
+      margin-top: 0;
+      margin-bottom: 0px;
+}
+.form-control{
+      border-color: #a12106;
+      background-color: #f0b27a;
+      padding: 1rem;
+      margin-top: 1px;
+      margin-bottom: 1px;
+}
+.form-control:focus{
+      background-color: #f6ddcc;
+      color:black;
+}
+.row > button{
+    width: 80%;
+    height: 50px;
+    background:  #d35400;
+    border: 1px;
+    color: rgb(249, 247, 246);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-inline: 140px;
+}

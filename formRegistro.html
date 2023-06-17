@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title src="imagenes/logo.gif" width=5%>Ingenios Tecnológicos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+         
+  </head>
+  
+  <body>
+
+    <div class="container-fluid" style="background-image: linear-gradient(to left, #D4AC0D, #F5CBA7)" >
+    
+      <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand mr-auto" href="#">
+            <img class="navbar-image" src="imagenes/logo.gif" width="70px"></a>
+            <span class="navbar-text ml-auto"></span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="font-size: 20px;">
+            <a class="nav-link" href="Index.html">Inicio</a>
+            <a class="nav-link" href="formNovedades.html">Novedades</a>
+            <a class="nav-link disabled" href="formRegistro.html">Registrarme</a>
+          </div>  
+      </div>
+      </nav>
+           
+              <form class="row"  action="enviado.php" method="post">
+
+                      <div class="col-md-8">
+                        <label for="apellido" class="form-label" id="la">Apellido y Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                      </div>
+                       
+                      <div class="row">
+                          <div class="col-md-5">
+                            <label for="correo" class="form-label" id="la">Correo Electrónico</label>
+                            <input type="text" class="form-control" id="emailAddress" name="email" 
+                                size="30" >
+                          </div>
+                          <div class="col-md-5">
+                            <label for="clave" class="form-label" id="la">Contraseña</label>
+                            <input type="password" class="form-control" id="clave" name="contraseña" size="20" 
+                            placeholder="La contraseña debe contener de 8 a 20 caracteres (letras y números).">
+                          </div>
+                      </div>
+
+                      <div class="row">
+                            <div class="col-md-5">
+                              <label for="direccion" class="form-label" id="la">Domicilio</label>
+                              <input type="text" class="form-control" id="direccion" name="domicilio" placeholder="Calle, altura, barrio">
+                            </div>
+                            
+                            <div class="col-md-5">
+                              <label for="lugar" class="form-label" id="la">Localidad</label>
+                              <input type="text" class="form-control" id="ciudad" name="localidad">
+                            </div>                     
+                      </div>
+                      
+                      <div class="row">
+                            <div class="col-md-5">
+                              <label for="prov" class="form-label" id="la">Provincia</label>
+                              <input type="text" class="form-control" id="pcia" name="provincia">
+                            </div>
+                            
+                            <div class="col-md-5">
+                              <label for="country" class="form-label" id="la">País</label>
+                              <input type="text" class="form-control" id="pais" name="pais">
+                            </div>
+                      </div>
+                      
+                      <div class="row">
+                            <div class="col-md-2">
+                            <button id="boton" type="submit" value="Registrarme">"Registrarme"</button>
+                            </div>
+                      </div>
+              </form>
+              <link rel="stylesheet" href="css/estilos.css">
+            
+    </div>
+ 
+  </body>
+
+
+</html>

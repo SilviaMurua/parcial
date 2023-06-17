@@ -1,0 +1,196 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: Helvetica;
+}
+
+html {
+    font-size: 60%;
+}
+.navbar {
+    border-bottom: #a12106 solid 1px;
+    margin-right: 50px;
+}
+
+
+.container {
+    background-image: linear-gradient(to left, #D4AC0D, #F5CBA7);
+    margin-top: 3px;
+}
+
+.container .navbar {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    background-color: transparent;
+    margin-bottom: 30px;
+        
+}
+.card{
+    background-color: Antiquewhite;
+    border-radius: 5%;
+    border: 1px solid blue;
+}
+
+.navbar a{
+    display: flex;
+    justify-content: center; 
+    margin-right: 60px ; 
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 300px;
+}
+.navbar i {
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.grid {
+    display: grid;
+    max-width: 900px;
+    justify-content:center;
+    margin: 5px 0 0 5px;
+    padding-top:8px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px,280px));
+    padding-bottom: 30px;
+}
+.carro {
+    float: right;
+    width: 350px;
+    height: 700px;
+    background-color: #F5CBA7;
+    margin:auto;
+    margin: 10px 10px 0 10px;
+    padding: 5px;
+    border: #a12106 solid 2px;
+}
+
+.items {
+     border: solid thin bisque;
+     background-color: transparent;
+}
+.items img {
+    width: 100%;
+    height: 170 px;
+}
+.info{
+    padding: 15px;
+}
+.info h4{
+    font-size: 1.6rem;
+}
+.info p{
+    font-size: 1.3rem;
+    display: flex;
+    text-align:center;
+}
+.precio {
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+}
+.info button{
+    width: 80%;
+    padding: 8px;
+    margin: 16px;
+    background-color: #c24ea5;
+    border-color: transparent;
+    border-radius: 20px;
+    font-size: large;
+}
+.info button:hover {
+    background-color: lightpink;
+    transition: all .3s;
+}
+
+
+/*estilos del carro de compras*/
+
+.seleccion .nav-card {
+    display: flex;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-bottom: solid thin #a12106;
+}
+.seleccion ul{
+    list-style: none;
+}
+.seleccion li{
+    float: center;
+    margin: 0 0 10px 2px;
+    text-align: center;
+    width: 15rem;
+    font-size: medium;
+    font-weight: bold;
+    padding-right: 25px ;
+     
+}
+.carro .seleccion .listado div{
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: auto;
+    font-size: 1.3rem;
+    padding: 5px 0 0 0;
+}   
+
+.listado img {
+    width: 70px;
+    margin-right: 8px;
+}
+
+#vaciarcarrito {
+    display: block;
+    width: 50%;
+    padding: 0.5rem;
+    margin: 10px auto;
+    background-color: #F8C471;
+    border: solid thin black;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.rojo{
+    color: red;
+}
+.carro .listado p{
+    width: 90px;
+    margin: 0 10px 0 22px;
+}
+.carro .listado p:nth-child(4){
+    padding-left: 25px;
+}
+.carro .listado p:last-child{
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 8px;
+    color: white;
+}
+/*formato formulario novedades*/
+.gride {
+    display: grid;
+    background-image: linear-gradient(to left, #D4AC0D, #F5CBA7);
+    max-width: 100%;
+    justify-content:space-between;
+    padding-top:8px;
+    gap: 10px;
+    
+    padding-bottom: 30px;
+}
+
+.gride #card{
+    width: 10px;
+    height: 60px;
+    margin: auto;
+}
+.gride .demovideo{
+        align-items: end;
+        margin: auto;
+        
+}
