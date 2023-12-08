@@ -86,7 +86,7 @@ function carritoHTML() {
     limpiarHTML()
     //recorre carrito y muestra en la página el contenido del carrito   
     articulosCarrito.forEach(producto => {
-        const fila = document.createElement('div');
+        const fila = document.createElement();
         fila.innerHTML = `
                 <img src="${producto.imagen}"></img>
                 <p>${producto.detalle}</p>

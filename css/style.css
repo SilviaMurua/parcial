@@ -11,6 +11,7 @@ html {
 .navbar {
     border-bottom: #a12106 solid 1px;
     margin-right: 50px;
+    margin-left: 50px;
 }
 
 
@@ -54,7 +55,7 @@ html {
     display: grid;
     max-width: 900px;
     justify-content:center;
-    margin: 5px 0 0 5px;
+    margin: 5px 0 0 10px;
     padding-top:8px;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(280px,280px));
@@ -131,7 +132,7 @@ html {
     padding-right: 25px ;
      
 }
-.carro .seleccion .listado div{
+.carro .seleccion .listado {
     display: flex;
     align-items: center;
     width: 340px;
