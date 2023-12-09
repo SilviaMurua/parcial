@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingenios Tecnológicos</title> 
+	<title>Ingenios Tecnológicos</title> 
 	<link href="css/bootstrap.min.css" rel="stylesheet"integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
 	crossorigin="anonymous"> 
      <link rel="stylesheet" href="css/style.css">
@@ -16,49 +16,53 @@
 	
 <div class="container-fluid" style="background-image: linear-gradient(to left, #D4AC0D, #F5CBA7)" >
 		
- 		
-	<nav class="navbar navbar-expand-lg" >
+  <div class="row">	
+		<nav class="navbar navbar-expand-md col-6-sm col-md-3 col-lg-11" >
 			
-		<div class="container-fluid">
-			  <a class="navbar-brand mr-auto" href="#">
-				<img class="navbar-image" src="imagenes/logo.gif" width=70px></a>
-				<span class="navbar-text ml-auto"></span>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-				<div class="navbar-nav" style="font-size: 20px;"  >
-					<a class="nav-link" href="formNovedades.html">Novedades</a>
-					<a class="nav-link" href="formRegistro.html">Registrarse</a>
-					<a class="nav-link" href="formLoguearse.php">Iniciar Sesión</a>
-					<i class="fa-solid fa-cart-shopping" id="iconocarrito" onClick="carritoHTML()"></i>
+				<div class="container-fluid">
+					<a class="navbar-brand mr-auto" href="#">
+						<img class="navbar-image" src="imagenes/logo.gif" width=15%></a>
+						<span class="navbar-text ml-auto"></span>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+					data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+					aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+						<div class="navbar-nav" style="font-size: 20px;"  >
+							<a class="nav-link" href="formNovedades.html">Novedades</a>
+							<a class="nav-link" href="formRegistro.html">Registrarse</a>
+							<a class="nav-link" href="formLoguearse.php">Iniciar Sesión</a>
+							<i class="fa-solid fa-cart-shopping" id="iconocarrito" onClick="carritoHTML()"></i>
+						</div>
 				</div>
-		</div>
-	</nav>
-		<div class="carro" id="carrito">
-						
-			<div class="seleccion">
-				<ul class="nav-card">
-					<li>Imagen</li>
-					<li>Detalle</li>
-					<li>Precio</li>
-					<li>Cantidad</li>
-					<li></li>
-				</ul>
-				<div class="listado" id="mostrandocarrito">
-					<img src="imagenes/casco.jpg">
-					<p>Meta Quest 2</p>
-					<p>U$s299</p>
-					<p>1</p>
-					<p><span>X</span></p>
+		</nav>
+	</div>
+	
+	<div class="container-fluid" id="lista-prod">
+		<div class="row" >
+		
+			<div class="col-sm-6 col-md-3 mr-3" id="carro" style="background-color: #F2D7D5;;">
+				<div class="seleccion" >
+					<ul class="nav-card">
+						<li>Imagen</li>
+						<li>Detalle</li>
+						<li>Precio</li>
+						<li>Cantidad</li>
+						<li></li>
+					</ul>
+					<div class="listado" id="mostrandocarrito">
+						<img src="imagenes/casco.jpg">
+						<p>Meta Quest 2</p>
+						<p>U$s299</p>
+						<p>1</p>
+						<p><span>X</span></p>
+					</div>
+					<button id="vaciarcarrito">Vaciar Carrito</button>
 				</div>
-				<button id="vaciarcarrito">Vaciar Carrito</button>
 			</div>
-				
-		</div>
 			
-		<div class="grid" id="lista-prod">
-							<div class="items">
-								<img src="imagenes/casco.jpg">
+			<div class="items col-sm-6 col-md-3 mr-3" style="width: 25%;">
+				<img src="imagenes/casco.jpg">
 								<div class="info">
 									<h4>Meta Quest 2</h4><br>
 									<p> El Oculus Quest 2, es un dispositivo con características únicas: como el seguimiento de la mano, la transmisión inalámbrica y una
@@ -68,9 +72,8 @@
 									</div>
 									<button class="agregar-carrito" data-id="1">Comprar Ahora</button>
         						</div>
-							</div>
-						
-							<div class="items">
+			</div>
+		<div class="items col-sm-6 col-md-3 mr-3">
 								<img src="imagenes/cargador.jpg" width="80%">
 								<div class="info">
 									<h4>MagSafe Duo Apple</h4><br>
@@ -82,10 +85,11 @@
 									</div>
 									<button class="agregar-carrito" data-id="2">Comprar Ahora</button>
         			
-  								</div>
-							</div>
-
-						<div class="items">
+  			</div>
+		</div>
+		
+		<div class="row ">
+						<div class="items col-sm-6 col-md-3 mr-3">
 							<img src="imagenes/auriculares.jpg">
 							<div class="info">
 								<h4>Sony WH-1000XM4</h4><br>
@@ -98,8 +102,8 @@
 								<button class="agregar-carrito" data-id="3">Comprar Ahora</button>
         					</div>
 						</div>
-
-						<div class="items">
+					</div>
+						<div class="items col-sm-6 col-md-3 mr-3">
 							<img src="imagenes/rastreador.jpg" >
 							<div class="info">
 								<h4>Rastreador Apple</h4><br>
@@ -112,7 +116,7 @@
         					</div>
 						</div>
 
-						<div class="items">
+						<div class="items col-sm-6 col-md-3 mr-3">
 							<img src="imagenes/pantalla.jpg">
 							<div class="info">
 								<h4>Amazon Pantalla inteligente</h4><br>
@@ -125,8 +129,10 @@
 									<button class="agregar-carrito" data-id="5">Comprar Ahora</button>
         					</div>
 						</div>
+		</div>
 
-						<div class="items">
+		<div class="row">
+						<div class="items col-sm-6 col-md-3 mr-3">
 							<img src="imagenes/parlante.jpg">
 							<div class="info">
 								<h4>UE Bluetoth speaker</h4><br>
@@ -139,7 +145,7 @@
         					</div>
 						</div>
 
-						<div class="items">
+						<div class="items col-sm-6 col-md-3 mr-3">
 							<img src="imagenes/aspirador.jpg">
 							<div class="info">
 								<h4>Mini Table Vacuum Cleaner</h4><br>
@@ -152,7 +158,7 @@
 							</div>
 						</div>
 
-						<div class="items">
+						<div class="items col-sm-6 col-md-3 mr-3">
 							<img src="imagenes/dron.jpeg">
 							<div class="info">
 								<h4>DJI Avata</h4><br>
@@ -164,8 +170,10 @@
 								<button class="agregar-carrito" data-id="8">Comprar Ahora</button>
 							</div>
 						</div>
-						
-						<div class="items">
+		</div>
+
+		<div class="row">
+						<div class="items col-sm-6 col-md-3 mr-3">
 							<img src="imagenes/impresora.jpg">
 							<div class="info">
 								<h4>HP Sprocket Impresora</h4><br>
@@ -183,9 +191,12 @@
     	
 
 	<link rel="stylesheet" href="css/style.css">
-   
+	</div>
 </div>
 <script src="js/carrito.js"></script>
 </body>
+<footer>
+	
+</footer>
 </html>
 
